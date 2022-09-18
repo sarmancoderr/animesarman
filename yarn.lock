@@ -253,6 +253,7 @@
   dependencies:
     "axios" "^0.27.2"
     "cheerio" "^1.0.0-rc.12"
+    "series-ado" "1.0.0"
 
 "ansi-regex@^5.0.1":
   "integrity" "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="
