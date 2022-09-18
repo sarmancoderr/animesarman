@@ -1,0 +1,3 @@
+[submodule "packages/series-scrapper"]
+	path = packages/series-scrapper
+	url = https://github.com/sarmancoderr/series-scrapper.git
