@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "git submodule init && git submodule update"
   },
   "dependencies": {
     "next": "12.3.0",
