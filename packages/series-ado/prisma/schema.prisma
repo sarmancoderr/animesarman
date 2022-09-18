@@ -9,3 +9,28 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Serie {
+  id   String @id @default(uuid())
+  name String
+  description String @default("")
+  picture String?
+  chapters Chapter[]
+}
+
+model Chapter {
+  id   String @id @default(uuid())
+  anime_id String
+  anime Serie @relation(fields: [anime_id], references: [id])
+  number_chapter Int
+  url String
+  streams ChapterStream[]
+}
+
+model ChapterStream {
+  id   String @id @default(uuid())
+  chapter_id String
+  anime Chapter @relation(fields: [chapter_id], references: [id])
+  server String
+  url String
+}
